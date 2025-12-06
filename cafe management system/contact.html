@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Café</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; color: #2c3e50; }
+       /* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.navbar h2 {
+    margin: 0;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+    position: relative; /* for dropdown positioning */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12;
+}
+
+/* Dropdown */
+.dropdown .dropbtn::after {
+    content: " ▼";
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2c3e50;
+    min-width: 150px;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #fee4ba;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+        h1 { color: #2c3e50; }
+        h2 { color: #f39c12; margin-top: 20px; }
+        p { line-height: 1.6; margin: 10px 0; }
+        ul { margin-left: 20px; }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+    <h2>Café Store</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <!-- Items dropdown -->
+        <li class="dropdown">
+            <a href="items.php" class="dropbtn">Items ▼</a>
+            <div class="dropdown-content">
+                <a href="Drink.php">Drinks</a>
+                <a href="fastFood.php">Fast Food</a>
+                <a href="Sweet.php">Sweets</a>
+                <a href="snaks.php">Snacks</a>
+            </div>
+        </li>
+
+        <li><a href="cart.php">Cart</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+    </ul>
+    <a href="login.html" style="
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #f39c12;
+    transition: background 0.3s, color 0.3s;
+" 
+onmouseover="this.style.background='white'; this.style.color='#2c3e50';" 
+onmouseout="this.style.background='#f39c12'; this.style.color='white';">
+    Log Out
+</a>
+
+</div>
+
+<div class="container">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you! Whether you have questions about our menu, want to give feedback, or just want to say hello, here’s how you can reach us.</p>
+
+    <h2>Address</h2>
+    <p>123 Café Street, Food City, PK-45678</p>
+
+    <h2>Phone</h2>
+    <p>📞 +92 300 1234567</p>
+
+    <h2>Email</h2>
+    <p>✉️ info@cafestore.com</p>
+
+    <h2>Business Hours</h2>
+    <ul>
+        <li>Monday - Friday: 8:00 AM - 10:00 PM</li>
+        <li>Saturday - Sunday: 9:00 AM - 11:00 PM</li>
+    </ul>
+
+    <h2>Follow Us on Social Media</h2>
+    <p>Stay updated with our latest offers, new menu items, and events:</p>
+    <ul>
+        <li>Facebook: facebook.com/cafestore</li>
+        <li>Instagram: instagram.com/cafestore</li>
+        <li>Twitter: twitter.com/cafestore</li>
+    </ul>
+
+    <h2>Feedback & Suggestions</h2>
+    <p>Your feedback is important to us. We are constantly striving to improve our services and offer the best experience. Please feel free to contact us through email or call us during business hours.</p>
+</div>
+
+</body>
+</html>
