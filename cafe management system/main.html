@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Café</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('../assest/main2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .overlay {
+            background: rgba(255, 255, 255, 0.835);
+            padding: 50px;
+            border-radius: 10px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 40px;
+        }
+        a.button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #e67e22;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        a.button:hover {
+            background: #cf6d18;
+        }
+    </style>
+</head>
+<body background="../assest/main2.jpg">
+
+<div class="overlay">
+    <h1>Welcome to Our Café</h1>
+    <a href="login.html" class="button">Go to Login</a>
+</div>
+
+
+<script>
+    console.log("Main page loaded!");
+
+    // Example: Button click alert (optional)
+    const btn = document.querySelector(".button");
+    btn.addEventListener("click", () => {
+        console.log("Navigating to Login Page...");
+    });
+</script>
+
+</body>
+</html>
