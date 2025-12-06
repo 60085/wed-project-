@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('../assest/main.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff9d00;
+        }
+        a {
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login</h2>
+
+        <form action="login.php" method="POST" onsubmit="return validateLogin()">
+            <input type="text" id="username" name="username" placeholder="Enter Username" required>
+            <input type="text" id="password" name="password" placeholder="Enter Password" required>
+
+            <button type="submit" name="login">Login</button>
+
+            <a href="registration.html">Register</a>
+        </form>
+    </div>
+
+   
+    </script>
+
+</body>
+</html>
